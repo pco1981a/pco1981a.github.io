@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(fontawesome-free-7.0.0-web/css/all.min.css);
+:root{/* Hace referencia al objeto HTML */
+    /* Sistema de colores RGB, en decimal o hexadecimal */
+    --color-primary: #D2C1B6;
+    --color-secondary: #1B3C53;
+    --color-background: #F9F3EF;
+    --color-surface: #456882;
+    --color-blanco: #FFFFFF;
+    --color-negro: #000000;
+    --color-gris-claro: #CCCCCC;
+    --color-gris-oscuro: #333333;
+    
+}
+
+/* Estilo del navbar principal */
+.main-nav .nav-link {
+  color: #2c4a5d;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 0.5rem 1rem;
+}
+
+.main-nav .nav-link:hover {
+  color: #000;
+}
+
+.navbar-brand img {
+  height: 50px;
+}
+
+.social-icon:hover {
+  color: #2d4373;          /* color más oscuro en hover */
+  transform: scale(1.2);   /* efecto de agrandar */
+}
+
+#concierto{
+    background-image: url(../imagenes/shakira.webp);
+    color: var(--color-background);
+    text-align: right;
+    background-size: cover;
+    background-position: left 25%;
+    background-attachment: fixed;
+}
+
+.display-1m{
+    
+    font-weight: 800;
+    font-size: 3em;
+    line-height: 1em;
+    letter-spacing: -3px;
+    text-shadow: 3px 3px #000000;
+}
+
+#noticias .col{
+    border: solid 1px var(--color-gris-claro);
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 12px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    transition: all ease-in-out .4s;
+}
+#noticias .col:hover{
+    box-shadow: 0px 12px 15px 0px rgba(0, 0, 0, 0.1);
+    margin-top: -4px;
+}
+
+#empresa{
+    background-color: black;
+    color: var(--color-primary);
+    color: #fff;
+    
+}
+
+.centrado-vertical{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.imagen-texto{
+    position: relative;
+}
+
+.imagen-texto figcaption{
+    position: absolute;
+    background-color: rgba(0,0,0,0.6);
+    width: calc(100% - 24px);
+    height: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 24px;
+    opacity: 0;
+    transition: all ease-in-out .5s;
+}
+.imagen-texto figcaption:hover{
+    opacity: 1;
+    color: #fff;
+}
+
+#divbody{
+    font-family: "Urbanist", sans-serif;
+    margin: 0;
+    line-height: 1.5;
+    font-size: 18px;  
+}
+
+.ax a{/* estado inicial de vinculo */
+    color: var(--color-surface);
+    text-decoration: none;
+}
+.ax a:hover{/* estado al pasar el puntero del mouse por el vinculo */
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+.hx h2,
+.hx h3 {
+    text-align: center;
+}
+
+#main-header{
+    position: sticky;
+    top: 0;
+    background-color: var(--color-blanco);
+    z-index: 1000;
+}
+
+#header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
